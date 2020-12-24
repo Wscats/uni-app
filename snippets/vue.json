@@ -1,0 +1,43 @@
+{
+	"Vue Base": {
+		"prefix": "vbase",
+		"body": [
+			"<template>",
+			"\t<${1:div}>",
+			"",
+			"\t</${1:div}>",
+			"</template>",
+			"",
+			"<script>",
+			"\texport default {",
+			"\t\t${0}",
+			"\t}",
+			"</script>",
+			"",
+			"<style scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File"
+	},
+	"view_class": {
+		"prefix": "viewclass",
+		"triggerAssist": true,
+		"body": [
+			"<view class=\"$1\">",
+			"\t$0",
+			"</view>"
+		]
+	},
+	"view for": {
+		"prefix": "viewfor",
+		"body": [
+			"<view v-for=\"(item,index) in ${1:dataList}\" :key=\"index\">",
+			"\t$0",
+			"</view>"
+		],
+		"project": "uni-app",
+		"scope": "source.vue.html",
+		"description": "view带for循环"
+	}
+}

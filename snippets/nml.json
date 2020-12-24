@@ -1,0 +1,269 @@
+{
+    "u_template": {
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t\t$1",
+            "\t</div>",
+            "</template>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_template"
+    },
+    "u_template_root": {
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t\t$1",
+            "\t</div>",
+            "</template>",
+            "<style>",
+            "\t",
+            "</style>",
+            "<script>",
+            "\texport default {",
+            "\t\tdata: {",
+            "\t\t\t",
+            "\t\t},",
+            "\t\tonInit () {",
+            "\t\t\t",
+            "\t\t}",
+            "\t}",
+            "</script>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_template_root"
+    },
+    "u_style": {
+        "body": [
+            "<style>",
+            "\t$1",
+            "</style>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_style"
+    },
+    "u_script": {
+        "body": [
+            "<script>",
+            "\texport default {",
+            "\t\tdata: {",
+            "\t\t\t",
+            "\t\t},",
+            "\t\tonInit () {",
+            "\t\t\t",
+            "\t\t}",
+            "\t}",
+            "</script>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_script"
+    },
+    "u_tabs": {
+        "body": [
+            "<tabs>",
+            "\t<tab-content>",
+            "\t\t<div><text>tabContent1$1</text></div>",
+            "\t\t<div><text>tabContent2</text></div>",
+            "\t\t<div><text>tabContent3</text></div>",
+            "\t</tab-content>",
+            "\t<tab-bar>",
+            "\t\t<text>tabBar1</text>",
+            "\t\t<text>tabBar2</text>",
+            "\t\t<text>tabBar3</text>",
+            "\t</tab-bar>",
+            "</tabs>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_tabs"
+    },
+    "u_tabs-bar": {
+        "body": [
+            "<tab-bar>",
+            "\t$1",
+            "</tab-bar>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_tabs"
+    },
+    "u_tabs-content": {
+        "body": [
+            "<tab-content>",
+            "\t$1",
+            "</tab-content>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_tabs-content"
+    },
+    "u_list": {
+        "body": [
+            "<list onscrollbottom=\"scrollbottom\" id=\"list\">",
+            "\t<!-- 列表元素，属性type值相同时，需要确保渲染后的视图布局也完全相同 -->",
+            "\t<list-item type=\"listItem\" for=\"{{listData$1}}\">",
+            "\t\t<text>{{\\$item}}--{{\\$idx}}</text>",
+            "\t</list-item>",
+            "\t<!-- 加载更多 -->",
+            "\t<list-item type=\"loadMore\" class=\"load-more\" if=\"{{loadMore}}\">",
+            "\t\t<progress type=\"circular\"></progress>",
+            "\t\t<text>加载更多</text>",
+            "\t</list-item>",
+            "</list>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_list"
+    },
+    "u_list-item": {
+        "body": [
+            "<list-item type=\"$1\">",
+            "\t$2",
+            "</list-item>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_list-item"
+    },
+    "u_div": {
+        "body": [
+            "<div>",
+            "\t$1",
+            "</div>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_div"
+    },
+    "u_image": {
+        "body": [
+            "<image src=\"$1\"></image>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_image"
+    },
+    "u_input": {
+        "body": [
+            "<input class=\"input\" type=\"text$1\" placeholder=\"请输入text\" onchange=\"change\"></input>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_input"
+    },
+    "u_label": {
+        "body": [
+            "<!-- label为input、textarea组件定义标注 -->",
+            "<label target=\"inputID$1\">input:</label>",
+            "<input type=\"text\" class=\"class1\" id=\"inputID\" placeholder=\"请输入\">"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_label"
+    },
+    "u_picker": {
+        "body": [
+            "<picker class=\"picker\" type=\"time$1\" onchange=\"change\"></picker>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_picker"
+    },
+    "u_progress": {
+        "body": [
+            "<progress class=\"progerss\" type=\"horizontal$1\" percent=\"10\"></progress>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_progress"
+    },
+    "u_refresh": {
+        "body": [
+            "<refresh class=\"refresh\" onrefresh=\"refresh\" refreshing=\"{{isRefreshing}}\">",
+            "\t$1<div class=\"page-title-wrap\">",
+            "\t\t<text class=\"page-title\">{{componentName}}</text>",
+            "\t</div>",
+            "\t<div class=\"item-container\">",
+            "\t\t<input class=\"btn\" type=\"button\" value=\"停止刷新\" onclick=\"stopRefresh\">",
+            "\t</div>",
+            "</refresh>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_refresh"
+    },
+    "u_slider": {
+        "body": [
+            "<slider class=\"slider\" min=\"0$1\" max=\"100\" value=\"{{currentValue}}\" onchange=\"getValue('currentValue')\"></slider>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_slider"
+    },
+    "u_a": {
+        "body": [
+            "<a href=\"/page?param=value$1\">"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_a"
+    },
+    "u_stack": {
+        "body": [
+            "<stack class=\"stack\">",
+            "\t$1",
+            "</stack>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_stack"
+    },
+    "u_swiper": {
+        "body": [
+            "<swiper class=\"swiper\" autoplay=\"{{autoPlay$1}}\" interval=\"{{sliderValue}}\" indicator=\"{{indicator}}\">",
+            "\t<text class=\"item\">A</text>",
+            "\t<text class=\"item\">B</text>",
+            "\t<text class=\"item\">C</text>",
+            "</swiper>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_swiper"
+    },
+    "u_switch": {
+        "body": [
+            "<switch checked=\"true\" class=\"switch\"></switch>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_switch"
+    },
+    "u_text": {
+        "body": [
+            "<text>$1</text>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_text"
+    },
+    "u_textarea": {
+        "body": [
+            "<textarea placeholder=\"$2\" class=\"textarea\">$1</textarea>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_textarea"
+    },
+    "u_video": {
+        "body": [
+            "<video autoplay=\"true\"  onprepared=\"\" onstart=\"\"  onpause=\"\" onfinish=\"\" onerror=\"\" onseeking=\"\" onseeked=\"\" ontimeupdate=\"\" src=\"$1\"></video>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_video"
+    },
+    "u_web": {
+        "body": [
+            "<web src=\"$1\" id=\"web\"></web>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_web"
+    },
+    "u_import": {
+        "body": [
+            "<import name=\"$1\" src=\"$2\"></import>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_import"
+    },
+    "u_block": {
+        "body": [
+            "<block for=\"$data\">",
+            "\t<text>{{\\$item.name}}</text>",
+            "</block>"
+        ],
+        "triggerAssist": false,
+        "prefix": "u_block"
+    }
+}

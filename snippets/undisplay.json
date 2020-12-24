@@ -1,0 +1,76 @@
+{
+	"{...}": {
+		"prefix": "{",
+		"body": [
+			"{",
+			"\t$0",
+			"}"
+		],
+		"scope": "_json_object.js",
+		"hidden": true
+	},
+	"function(){...}": {
+		"prefix": "(){}",
+		"body": [
+			"function($1){",
+			"\t$0",
+			"}"
+		],
+		"scope": "_func_callback.js",
+		"hidden": true
+	},
+	":function(){...}": {
+		"prefix": ":func",
+		"body": [
+			":function($1){",
+			"\t$0",
+			"}"
+		],
+		"scope": "_object_func_callback.js",
+		"hidden": true
+	},
+	":() => {...}": {
+		"prefix": ":()",
+		"body": [
+			": ($1) => {",
+			"\t$0",
+			"}"
+		],
+		"scope": "_object_func_callback_arrow.js",
+		"hidden": true
+	},
+	"(){...}": {
+		"prefix": "(){}",
+		"body": [
+			"() {",
+			"\t$0",
+			"}"
+		],
+		"scope": "_object_func_callback_method.js",
+		"hidden": true
+	},
+	":value": {
+		"prefix": ":value",
+		"body": [
+			":$0"
+		],
+		"scope": "_object_property_callback.js",
+		"hidden": true
+	},
+	":stringvalue": {
+		"prefix": ":value",
+		"body": [
+			":\"$1\"$0"
+		],
+		"scope": "_json_object_string.js",
+		"hidden": true
+	},
+	":stringvalue,": {
+		"prefix": ":value",
+		"body": [
+			":\"$1\",$0"
+		],
+		"scope": "_json_object_string_with_comma.js",
+		"hidden": true
+	}
+}

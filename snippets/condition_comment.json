@@ -1,0 +1,38 @@
+{
+    "#ifdef": {
+        "body": [
+            "// #ifdef ${1:APP-PLUS/APP-VUE/APP-NVUE/MP/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
+            "$0",
+            "// #endif"
+        ],
+        "prefix": "ifdef"
+    },
+    "#ifndef": {
+        "body": [
+            "// #ifndef ${1:APP-PLUS/APP-VUE/APP-NVUE/MP/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
+            "$0",
+            "// #endif"
+        ],
+        "prefix": "ifndef"
+    },
+    "#ifdef ": {
+        "body": [
+            "// #ifdef ${1:APP-PLUS/APP-VUE/APP-NVUE/MP/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
+            "$0",
+            "// #endif"
+        ],
+        "prefix": "ifdef",
+        "scope": "object.property.js",
+        "hidden": true
+    },
+    "#ifndef ": {
+        "body": [
+            "// #ifndef ${1:APP-PLUS/APP-VUE/APP-NVUE/MP/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
+            "$0",
+            "// #endif"
+        ],
+        "prefix": "ifndef",
+        "scope": "object.property.js",
+        "hidden": true
+    }
+}

@@ -1,0 +1,880 @@
+{
+  "mui().each()": {
+    "body": [
+      "mui(\u0027$1\u0027).each(function (${3:index},${4:element}) {",
+      "\t$0",
+      "})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mmeach"
+  },
+  "plus.camera": {
+    "body": [
+      "plus.camera."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pcamera"
+  },
+  "plus.contacts": {
+    "body": [
+      "plus.contacts."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pcontacts"
+  },
+  "mui.confirm()": {
+    "body": [
+      "mui.confirm(\u0027${1:message}\u0027,\u0027${2:title}\u0027,[\u0027${3:取消}\u0027,\u0027${4:确认}\u0027],function (${5:e}) {",
+      "\t${5:e}.index$0",
+      "}${6:,\u0027div\u0027})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mdconfirm"
+  },
+  "plus.statistic": {
+    "body": [
+      "plus.statistic."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pstatistic"
+  },
+  "plus.key": {
+    "body": [
+      "plus.key."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pkey"
+  },
+  "plus.storage": {
+    "body": [
+      "plus.storage."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pstorage"
+  },
+  "plus.payment": {
+    "body": [
+      "plus.payment."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "ppayment"
+  },
+  "mui.getJSON()": {
+    "body": [
+      "mui.getJSON(\u0027$1\u0027,{$2},function($3){",
+      "\t\t$4",
+      "\t}",
+      ");$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mjson"
+  },
+  "plus.net": {
+    "body": [
+      "plus.net."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pnet"
+  },
+  "plus.runtime": {
+    "body": [
+      "plus.runtime."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pruntime"
+  },
+  "mui.scrollTo()": {
+    "body": [
+      "mui.scrollTo(${1:ypos},${2:duration},${3:/function () {",
+      "    \t",
+      "}}$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mscrollto"
+  },
+  "plus.uploader": {
+    "body": [
+      "plus.uploader."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "puploader"
+  },
+  "mui.backTask(双击进入后台)": {
+    "body": [
+      "//首页返回键处理",
+      "//处理逻辑：1秒内，连续两次按返回键，则进入后台；",
+      "var first \u003d null;",
+      "mui.back \u003d function() {",
+      "\t//首次按键，提示‘再按一次退出应用’",
+      "\tif (!first) {",
+      "\t\tfirst \u003d new Date().getTime();",
+      "\t\tmui.toast(\u0027再按一次退出应用\u0027);",
+      "\t\tsetTimeout(function() {",
+      "\t\t\tfirst \u003d null;",
+      "\t\t}, 1000);",
+      "\t} else {",
+      "\t\tif (new Date().getTime() - first \u003c 1000) {",
+      "\t\t\tvar main \u003d plus.android.runtimeMainActivity();",
+      "            main.moveTaskToBack(false);",
+      "\t\t}",
+      "\t}",
+      "};"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mbackMoveTaskToBack"
+  },
+  "mui.plusReady()": {
+    "body": [
+      "mui.plusReady(function () {",
+      "    $1",
+      "})$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mplusready"
+  },
+  "plus.io": {
+    "body": [
+      "plus.io."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pio"
+  },
+  "querySelector": {
+    "body": [
+      "document.querySelector(\u0027$1\u0027).$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "ds"
+  },
+  "mui.init({刷新组件})": {
+    "body": [
+      "mui.init({",
+      "  pullRefresh : {",
+      "    container:\u0027#${1:refreshContainer}\u0027,",
+      "    down : {",
+      "      callback :${2:pullfresh}",
+      "    },",
+      "    up : {",
+      "      callback :${3:pullfresh} ",
+      "    }",
+      "  }",
+      "});$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "minpullRefresh"
+  },
+  "mui.init({按键绑定})": {
+    "body": [
+      "mui.init({",
+      "\tkeyEventBind: {",
+      "\t\tbackbutton: ${1:true/false},  ",
+      "\t\tmenubutton: ${2:true/false}   ",
+      "\t},",
+      "})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "minkeyevent"
+  },
+  "mui(\u0027\u0027).slider": {
+    "body": [
+      "mui(\u0027.${1:mui-slider}\u0027).slider({$2})$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mmslider"
+  },
+  "mui.backDouble(双击退出应用)": {
+    "body": [
+      "//首页返回键处理",
+      "//处理逻辑：1秒内，连续两次按返回键，则退出应用；",
+      "var first \u003d null;",
+      "mui.back \u003d function() {",
+      "\t//首次按键，提示‘再按一次退出应用’",
+      "\tif (!first) {",
+      "\t\tfirst \u003d new Date().getTime();",
+      "\t\tmui.toast(\u0027再按一次退出应用\u0027);",
+      "\t\tsetTimeout(function() {",
+      "\t\t\tfirst \u003d null;",
+      "\t\t}, 1000);",
+      "\t} else {",
+      "\t\tif (new Date().getTime() - first \u003c 1000) {",
+      "\t\t\tplus.runtime.quit();",
+      "\t\t}",
+      "\t}",
+      "};"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mbackDouble"
+  },
+  "mui(\u0027\u0027).scroll": {
+    "body": [
+      "mui(\u0027.${1:mui-scroll-wrapper}\u0027).scroll({$2})$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mmscroll"
+  },
+  "mui.preload()": {
+    "body": [
+      "mui.preload({",
+      "\turl:\u0027${1:url}\u0027,",
+      "\tid:\u0027${2:id}\u0027,",
+      "\tstyles:{$3},//窗口参数",
+      "\textras:{$4}//自定义扩展参数",
+      "})$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mpreload"
+  },
+  "mui.open": {
+    "body": [
+      "mui.openWindow(\u0027${1:url}\u0027,\u0027${2:id}\u0027,{$3})"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mopen"
+  },
+  "plus.push": {
+    "body": [
+      "plus.push."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "ppush"
+  },
+  "plus.gallery": {
+    "body": [
+      "plus.gallery."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pgallery"
+  },
+  "return false;": {
+    "body": [
+      "return false;"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "rfalse"
+  },
+  "mui.init({重写窗口关闭逻辑})": {
+    "body": [
+      "mui.init({",
+      "\tbeforeback:function () {",
+      "\t\t$0",
+      "\t}",
+      "})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "minbeforeback"
+  },
+  "mui.init({预加载数量})": {
+    "body": [
+      "preloadLimit:${1:5}"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "minprelimit"
+  },
+  "mui.back()(返回上级页面)": {
+    "body": [
+      "mui.back()$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mback"
+  },
+  "querySelectoraddEventListener": {
+    "body": [
+      "document.querySelector(\u0027$1\u0027).addEventListener(\u0027${2:tap}\u0027,function ($3) {",
+      "        $0",
+      "})"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "dsa"
+  },
+  "documentaddEventListener": {
+    "body": [
+      "document.addEventListener(\u0027${1:scroll}\u0027,function ($2) {",
+      "        $0",
+      "})"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "dad"
+  },
+  "mui.fire()": {
+    "body": [
+      "mui.fire(${1:targetWebviewObj},\u0027${2:event}\u0027,{${3:data}})"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mfire"
+  },
+  "plus.messaging": {
+    "body": [
+      "plus.messaging."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pmessaging"
+  },
+  "mui.alert()": {
+    "body": [
+      "mui.alert(\u0027${1:message}\u0027,\u0027${2:title}\u0027,\u0027${3:btnValue}\u0027,function (${4:e}) {",
+      "   ${4:e}.index$0",
+      "}${5:,\u0027div\u0027})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mdalert"
+  },
+  "mui.ajax()": {
+    "body": [
+      "mui.ajax(\u0027$1\u0027,{",
+      "\tdata:{",
+      "\t\t$2",
+      "\t},",
+      "\tdataType:\u0027${3:json}\u0027,//服务器返回json格式数据",
+      "\ttype:\u0027${4:post}\u0027,//HTTP请求类型",
+      "\ttimeout:${5:10000},//超时时间设置为10秒；",
+      "\tsuccess:function(${6:data}){",
+      "\t\t$7",
+      "\t},",
+      "\terror:function(${8:xhr,type,errorThrown}){",
+      "\t\t$9",
+      "\t}",
+      "});$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "majax"
+  },
+  "plus.networkinfo": {
+    "body": [
+      "plus.networkinfo."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pnetworkinfo"
+  },
+  "mui.off": {
+    "body": [
+      "mui(\u0027$1\u0027).off(\u0027${2:tap}\u0027,\u0027$3\u0027,function($4){",
+      "  $0",
+      "}) "
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mmoff"
+  },
+  "plus.device": {
+    "body": [
+      "plus.device."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pdevice"
+  },
+  "mui(\u0027\u0027).pullRefresh": {
+    "body": [
+      "mui(\u0027#${1:refreshContainer}\u0027).pullRefresh().$2"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mmpullrefresh"
+  },
+  "plus.nativeUI": {
+    "body": [
+      "plus.nativeUI."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pnativeUI"
+  },
+  "plus.android": {
+    "body": [
+      "plus.android."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pandroid"
+  },
+  "plus.share": {
+    "body": [
+      "plus.share."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pshare"
+  },
+  "mui.init({手势事件})": {
+    "body": [
+      "mui.init({",
+      "  \tgestureConfig:{",
+      "\t   tap: ${1:true/false}, ",
+      "\t   doubletap: ${2:true/false}, ",
+      "\t   longtap: ${3:true/false}, ",
+      "\t   swipe: ${4:true/false}, ",
+      "\t   drag: ${5:true/false}, ",
+      "\t   hold:${6:false/true},",
+      "\t   release:${7:false/true}",
+      "  \t}",
+      "});$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mingesture"
+  },
+  "plus.ios": {
+    "body": [
+      "plus.ios."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pios"
+  },
+  "plus.speech": {
+    "body": [
+      "plus.speech.$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pspeech"
+  },
+  "plus.display": {
+    "body": [
+      "plus.display."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pdisplay"
+  },
+  "mui.get()": {
+    "body": [
+      "mui.get(\u0027$1\u0027,{",
+      "\t\t$2",
+      "\t},function(${3:data}){",
+      "\t\t$0",
+      "\t},\u0027${4:json}\u0027",
+      ");"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mget"
+  },
+  "mui.init({预加载})": {
+    "body": [
+      "mui.init({",
+      "\tpreloadPages:[{",
+      "\t  url:\u0027${1:url}\u0027,",
+      "      id:\u0027${2:id}\u0027,",
+      "      styles:{",
+      "        $3",
+      "      },",
+      "      extras:{$4}",
+      "\t}]",
+      "})$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "minpreload"
+  },
+  "plus.nativeObj": {
+    "body": [
+      "plus.nativeObj."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pnativeObj"
+  },
+  "mui.post()": {
+    "body": [
+      "mui.post(\u0027$1\u0027,{",
+      "\t\t$2",
+      "\t},function(${3:data}){",
+      "\t\t$0",
+      "\t},\u0027${4:json}\u0027",
+      ");"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mpost"
+  },
+  "mui.closePopup()": {
+    "body": [
+      "mui.closePopup()$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mdclosePopup"
+  },
+  "plus.navigator": {
+    "body": [
+      "plus.navigatorsc."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pnavigator"
+  },
+  "mui.trigger()": {
+    "body": [
+      "mui.trigger(${1:dom},\u0027${3:tap}\u0027${4:,{a:\u0027as\u0027}})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mtrigger"
+  },
+  "plus.downloader": {
+    "body": [
+      "plus.downloader."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pdown"
+  },
+  "plusReady": {
+    "body": [
+      "function plusReady(){",
+      "    $0",
+      "}",
+      "if (window.plus) {",
+      "    plusReady()",
+      "} else{",
+      "    document.addEventListener(\u0027plusready\u0027,plusReady,false);",
+      "}"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pready"
+  },
+  "mui.backFunction(重写返回逻辑)": {
+    "body": [
+      "mui.back\u003dfunction () {",
+      "    $0\t",
+      "}"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mbackfunction"
+  },
+  "mui.mask": {
+    "body": [
+      "var ${1:mask} \u003d mui.createMask(function () {",
+      "\t$2",
+      "})",
+      "${1:mask}.show()"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mmask"
+  },
+  "plus.geolocation": {
+    "body": [
+      "plus.geolocation."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pgeolocation"
+  },
+  "mui.init({设置状态栏颜色})": {
+    "body": [
+      "mui.init({",
+      "\tstatusBarBackground:\u0027#${1:FFFFFF}\u0027",
+      "})"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "minstatusbar"
+  },
+  "plus.oauth": {
+    "body": [
+      "plus.oauth."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "poauth"
+  },
+  "mui.prompt()": {
+    "body": [
+      " mui.prompt(\u0027${1:text}\u0027,\u0027${2:defaultText}\u0027,\u0027${3:title}\u0027,[\u0027${4:取消}\u0027,\u0027${5:确认}\u0027],function (${6:e}) {",
+      "    ${6:e}.index$0",
+      "}${7:,\u0027div\u0027})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mdprompt"
+  },
+  "plus.zip": {
+    "body": [
+      "plus.zip."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pzip"
+  },
+  "mui.ready": {
+    "body": [
+      "mui.ready(function () {",
+      "\t$0",
+      "})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mready"
+  },
+  "mui.init": {
+    "body": [
+      "mui.init({$0})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "minit"
+  },
+  "plus.audio": {
+    "body": [
+      "plus.audio."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "paudio"
+  },
+  "console.log();": {
+    "body": [
+      "console.log($1);"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "clog"
+  },
+  "plus.proximity": {
+    "body": [
+      "plus.proximity."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pproximity"
+  },
+  "plus.orientation": {
+    "body": [
+      "plus.orientation."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "porientation"
+  },
+  "mui.init({子页面})": {
+    "body": [
+      "mui.init({",
+      "\tsubpages:[{",
+      "\t  url:\u0027${1:url}\u0027,",
+      "      id:\u0027${2:id}\u0027,",
+      "      styles:{",
+      "        $3",
+      "      },",
+      "      extras:{$4}",
+      "\t}]",
+      "})$0"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "minsubpage"
+  },
+  "plus.os": {
+    "body": [
+      "plus.os."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pos"
+  },
+  "mui.later()": {
+    "body": [
+      "mui.later(function(){",
+      "\t$2  ",
+      "},${1:500/1000/1500/2000})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mlater"
+  },
+  "mui.extend()": {
+    "body": [
+      "mui.extend(${1:\u0027target\u0027},${2:\u0027source\u0027},${3:\u0027deep\u0027/true/false})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mextend"
+  },
+  "mui": {
+    "body": [
+      "mui."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mui"
+  },
+  "mui.os": {
+    "body": [
+      "mui.os."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mos"
+  },
+  "plus.accelerometer": {
+    "body": [
+      "plus.accelerometer."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pacce"
+  },
+  "mui.init({侧滑返回})": {
+    "body": [
+      "mui.init({",
+      "\tswipeBack:${1:true/false} ",
+      ");$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "minswipeback"
+  },
+  "clogios": {
+    "body": [
+      "console.log(JSON.stringify(${1:e}));",
+      "console.log(\u0027${2:e}\u0027);"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "cloios"
+  },
+  "mui.toast()": {
+    "body": [
+      "mui.toast(\u0027${1:message}\u0027)$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mdtoast"
+  },
+  "return true;": {
+    "body": [
+      "return true;"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "rtrue"
+  },
+  "mui.on": {
+    "body": [
+      "mui(\u0027$1\u0027).on(\u0027${2:tap}\u0027,\u0027$3\u0027,function($4){",
+      "  $0",
+      "}) "
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mmon"
+  },
+  "mui()": {
+    "body": [
+      "mui(\u0027$1\u0027)"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mmui"
+  },
+  "plus.barcode": {
+    "body": [
+      "plus.barcode."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pbarcode"
+  },
+  "mui.each()": {
+    "body": [
+      "mui.each(${1:obj},function (${2:index},${3:element}) {",
+      "\t$0",
+      "})"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "meach"
+  },
+  "getElementByIdaddEventListener": {
+    "body": [
+      "document.getElementById(\u0027$1\u0027).addEventListener(\u0027${2:tap}\u0027,function ($3) {",
+      "        $0",
+      "})"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "dga"
+  },
+  "plus.Screen": {
+    "body": [
+      "plus.Screen."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pScreen"
+  },
+  "mui.closePopups()": {
+    "body": [
+      "mui.closePopups()$0"
+    ],
+    "triggerAssist": false,
+    "scope": "source.js",
+    "prefix": "mdclosePopups"
+  },
+  "mui.currentWebview": {
+    "body": [
+      "mui.currentWebview."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "mcurrent"
+  },
+  "plus.maps": {
+    "body": [
+      "plus.maps."
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "pmaps"
+  },
+  "windowaddEventListener": {
+    "body": [
+      "window.addEventListener(\u0027${1:scroll}\u0027,function ($2) {",
+      "        $0",
+      "})"
+    ],
+    "triggerAssist": true,
+    "scope": "source.js",
+    "prefix": "wad"
+  }
+}

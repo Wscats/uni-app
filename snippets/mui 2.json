@@ -1,0 +1,1091 @@
+{
+  "mDoctype(mui-dom结构)": {
+    "body": [
+      "\u003c!doctype html\u003e",
+      "\u003chtml lang\u003d\"en\"\u003e",
+      "\u003chead\u003e",
+      "\t\u003cmeta charset\u003d\"UTF-8\" /\u003e",
+      "\t\u003ctitle\u003eDocument\u003c/title\u003e",
+      "\t\u003cmeta name\u003d\"viewport\" content\u003d\"width\u003ddevice-width,initial-scale\u003d1,minimum-scale\u003d1,maximum-scale\u003d1,user-scalable\u003dno\" /\u003e",
+      "\t\u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"${1:css\\/mui.css}\"/\u003e",
+      "\u003c/head\u003e",
+      "\u003cbody\u003e",
+      "\t$0",
+      "\t\u003cscript src\u003d\"${2:js\\/mui.js}\" type\u003d\"text/javascript\" charset\u003d\"utf-8\"\u003e\u003c/script\u003e",
+      "\t\u003cscript type\u003d\"text/javascript\"\u003e",
+      "\tmui.init()$3",
+      "\t\u003c/script\u003e",
+      "\u003c/body\u003e",
+      "\u003c/html\u003e"
+    ],
+    "triggerAssist": true,
+    "scope": "text.html.basic",
+    "prefix": "mdoctype"
+  },
+  "mTab(底部选项卡)": {
+    "body": [
+      "\u003cnav class\u003d\"mui-bar mui-bar-tab\"\u003e",
+      "\t\u003ca class\u003d\"mui-tab-item mui-active\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-home\"\u003e\u003c/span\u003e",
+      "\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e${1:首页}\u003c/span\u003e",
+      "\t\u003c/a\u003e",
+      "\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-phone\"\u003e\u003c/span\u003e",
+      "\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e${2:电话}\u003c/span\u003e",
+      "\t\u003c/a\u003e",
+      "\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-email\"\u003e\u003c/span\u003e",
+      "\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e${3:邮件}\u003c/span\u003e",
+      "\t\u003c/a\u003e",
+      "\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-gear\"\u003e\u003c/span\u003e",
+      "\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e${4:设置}\u003c/span\u003e",
+      "\t\u003c/a\u003e",
+      "\u003c/nav\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mtab"
+  },
+  "mList(列表)": {
+    "body": [
+      "\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\t\u003ca class\u003d\"mui-navigate-right\"\u003e",
+      "\t\t\t\t${1:Item 1}",
+      "\t\t\t\u003c/a\u003e",
+      "\t\t\u003c/li\u003e",
+      "\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\t\u003ca class\u003d\"mui-navigate-right\"\u003e",
+      "\t\t\t\t ${2:Item 2}",
+      "\t\t\t\u003c/a\u003e",
+      "\t\t\u003c/li\u003e",
+      "\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\t\u003ca class\u003d\"mui-navigate-right\"\u003e",
+      "\t\t\t\t ${3:Item 3}",
+      "\t\t\t\u003c/a\u003e",
+      "\t\t\u003c/li\u003e",
+      "\t\u003c/ul\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mlist"
+  },
+  "mTabSegmented(div选项卡)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-segmented-control\"\u003e",
+      "\t\u003ca class\u003d\"mui-control-item mui-active\" href\u003d\"#item1\"\u003e${1:选项卡1}\u003c/a\u003e",
+      "\t\u003ca class\u003d\"mui-control-item\" href\u003d\"#item2\"\u003e${1:选项卡2}\u003c/a\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mtabsegmented"
+  },
+  "mui-col-sm": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-col-sm-${1:6}\"\u003e${2:Item 1}\u003c/div\u003e",
+      "\u003cdiv class\u003d\"mui-col-sm-${3:6}\"\u003eItem 2\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mcolsm"
+  },
+  "mCheckbox(复选框居左)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-checkbox mui-left\"\u003e",
+      "  \u003clabel\u003e${1:checkbox}\u003c/label\u003e",
+      "  \u003cinput name\u003d\"${3:checkbox1}\" type\u003d\"checkbox\" ${2:checked} \u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mcheckbox_left"
+  },
+  "mButton(按钮)": {
+    "body": [
+      "\u003cbutton type\u003d\"button\" class\u003d\"mui-btn ${1:mui-btn-blue/mui-btn-green/mui-btn-yellow/mui-btn-red/mui-btn-purple/mui-btn-grey}\"\u003e${2:按钮}\u003c/button\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mbutton"
+  },
+  "mPagination(分页)": {
+    "body": [
+      "\u003cul class\u003d\"mui-pagination\"\u003e",
+      "\t\u003cli class\u003d\"mui-disabled\"\u003e",
+      "\t\t\u003cspan\u003e \u0026laquo; \u003c/span\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-active\"\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e${1:1}\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e${2:2}\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e\u0026raquo;\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\u003c/ul\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mpagination"
+  },
+  "mGallery-Table(图文表格)": {
+    "body": [
+      "\u003cul class\u003d\"mui-table-view mui-grid-view\"\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-6\"\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object\" src\u003d\"http://placehold.it/400x300\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${1:文字说明1}\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-6\"\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object\" src\u003d\"http://placehold.it/400x300\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${2:文字说明2}\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\u003c/ul\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mslider_gallery_table"
+  },
+  "mOffcanvas(缩放式侧滑(类手机QQ))": {
+    "body": [
+      "\u003c!-- 缩放式侧滑（类手机QQ） --\u003e",
+      "\u003c!-- 侧滑导航根容器 --\u003e",
+      "\u003cdiv class\u003d\"mui-off-canvas-wrap mui-draggable mui-scalable\"\u003e",
+      "  \u003c!-- 菜单容器 --\u003e",
+      "  \u003caside class\u003d\"mui-off-canvas-left mui-transitioning\" id\u003d\"offCanvasSide\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-scroll-wrapper\"\u003e",
+      "\t  \u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\u003c!-- 菜单具体展示内容 --\u003e",
+      "\t\t$1",
+      "\t  \u003c/div\u003e",
+      "\t\u003c/div\u003e",
+      "  \u003c/aside\u003e",
+      "  \u003c!-- 主页面容器 --\u003e",
+      "  \u003cdiv class\u003d\"mui-inner-wrap mui-transitioning\"\u003e",
+      "\t\u003c!-- 主页面标题 --\u003e",
+      "\t\u003cheader class\u003d\"mui-bar mui-bar-nav\"\u003e",
+      "\t  \u003ca class\u003d\"mui-icon mui-action-menu mui-icon-bars mui-pull-left\" href\u003d\"#offCanvasSide\"\u003e\u003c/a\u003e",
+      "\t  \u003ch1 class\u003d\"mui-title\"\u003e标题\u003c/h1\u003e",
+      "\t\u003c/header\u003e",
+      "\t\u003cnav class\u003d\"mui-bar mui-bar-tab\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item mui-active\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-home\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e首页\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-phone\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e电话\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-email\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e邮件\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-gear\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e设置\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/nav\u003e",
+      "\t\u003cdiv class\u003d\"mui-content mui-scroll-wrapper\"\u003e",
+      "\t  \u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\u003c!-- 主界面具体展示内容 --\u003e",
+      "\t\t$2",
+      "\t  \u003c/div\u003e",
+      "\t\u003c/div\u003e  ",
+      "\t\u003cdiv class\u003d\"mui-off-canvas-backdrop\"\u003e\u003c/div\u003e",
+      "  \u003c/div\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "moffcanvasscalable"
+  },
+  "mRadios(默认选中指定项)": {
+    "body": [
+      "\u003cul class\u003d\"mui-table-view mui-table-view-radio\"\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-navigate-right\"\u003e${1:Item 1}\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-selected\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-navigate-right\"\u003e${2:Item 2}\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-navigate-right\"\u003e${3:Item 3}\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\u003c/ul\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mradio_selected"
+  },
+  "mRadio(单选框)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-radio \"\u003e",
+      "\t\u003clabel\u003e${1:Radio}\u003c/label\u003e",
+      "\t\u003cinput name\u003d\"${3:radio}\" type\u003d\"radio\" ${2:checked}\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mradio"
+  },
+  "mSwitch(开关 - 蓝色)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row\"\u003e",
+      "\t\u003clabel\u003e${2:Switch}\u003c/label\u003e",
+      "\t\u003cdiv class\u003d\"mui-switch${1: mui-active} mui-switch-blue\"\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-switch-handle\"\u003e\u003c/div\u003e",
+      "\t\u003c/div\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mswitchblue"
+  },
+  "mSwitch(开关Mini)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-switch mui-switch-mini${1: mui-active}\"\u003e",
+      "  \u003cdiv class\u003d\"mui-switch-handle\"\u003e\u003c/div\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mswitchmini"
+  },
+  "mnumbox(数字输入框)": {
+    "body": [
+      "",
+      "\u003cdiv class\u003d\"mui-numbox\" data-numbox-step\u003d\u0027${1:1}\u0027 data-numbox-min\u003d\u0027${2:0}\u0027 data-numbox-max\u003d\u0027${3:10}\u0027\u003e",
+      "\t\u003cbutton class\u003d\"mui-btn mui-btn-numbox-minus\" type\u003d\"button\"\u003e-\u003c/button\u003e",
+      "\t\u003cinput class\u003d\"mui-input-numbox\" type\u003d\"number\" /\u003e",
+      "\t\u003cbutton class\u003d\"mui-btn mui-btn-numbox-plus\" type\u003d\"button\"\u003e+\u003c/button\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mnumbox"
+  },
+  "mText_Clear(带清除按钮的文本框)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row\"\u003e",
+      "\t\u003clabel\u003eInput\u003c/label\u003e",
+      "\t\u003cinput type\u003d\"text\" class\u003d\"mui-input-clear\" placeholder\u003d\"${1:带清除按钮的输入框}\"\u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "minputclear"
+  },
+  "mui-col-xs": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-col-xs-${1:6}\"\u003e${2:Item 1}\u003c/div\u003e",
+      "\u003cdiv class\u003d\"mui-col-xs-${3:6}\"\u003e${2:Item 2}\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mcolxs"
+  },
+  "ng-pluralize": {
+    "body": [
+      "\u003cng-pluralize\u003e$1\u003c/ng-pluralize\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "ngp"
+  },
+  "mForm(表单)": {
+    "body": [
+      "\u003cform class\u003d\"mui-input-group\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-input-row\"\u003e",
+      "\t\t\u003clabel\u003e${3:input}\u003c/label\u003e",
+      "\t\t\u003cinput type\u003d\"${1:text}\" class\u003d\"${2:mui-input-clear}\" placeholder\u003d\"${3:请输入}\"\u003e",
+      "\t\u003c/div\u003e",
+      "\u003c/form\u003e$0"
+    ],
+    "triggerAssist": true,
+    "scope": "text.html.basic",
+    "prefix": "mform"
+  },
+  "mbadge（数字角标）": {
+    "body": [
+      "\u003cspan class\u003d\"mui-badge ${1:mui-btn-blue/mui-btn-green/mui-btn-yellow/mui-btn-red/mui-btn-purple/mui-btn-grey}\"\u003e${2:1}\u003c/span\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mbadge"
+  },
+  "mprogressbar(进度条-有准确值)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-progressbar\"\u003e",
+      "\t\u003cspan\u003e\u003c/span\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mprogressbar"
+  },
+  "mRange(Label+滑块)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-input-range\"\u003e",
+      "\t\u003clabel\u003eRange\u003c/label\u003e",
+      "\t\u003cinput type\u003d\"range\" min\u003d\"0\" max\u003d\"100\" value\u003d\"50\"\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mrangelabel"
+  },
+  "slide（轮播组件）": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-slider\"\u003e",
+      "  \u003cdiv class\u003d\"mui-slider-group\"\u003e",
+      "\t\u003c!--第一个内容区容器--\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item\"\u003e",
+      "\t  \u003c!-- 具体内容 --\u003e",
+      "\t\u003c/div\u003e",
+      "\t\u003c!--第二个内容区--\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item\"\u003e",
+      "\t  \u003c!-- 具体内容 --\u003e",
+      "\t\u003c/div\u003e",
+      "  \u003c/div\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mslider"
+  },
+  "mRadio(单选框居左)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-radio mui-left\"\u003e",
+      "\t\u003clabel\u003e${1:Radio}\u003c/label\u003e",
+      "\t\u003cinput name\u003d\"${3:radio}\" type\u003d\"radio\" ${2:checked}\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mradio_left"
+  },
+  "mScroll(区域滚动)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-scroll-wrapper\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t${1:\u003c!--这里放置真实显示的DOM内容--\u003e}",
+      "\t\u003c/div\u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mscroll"
+  },
+  "mSwitch(开关Mini - blue)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-switch mui-switch-mini${1: mui-active} mui-switch-blue\"\u003e",
+      "  \u003cdiv class\u003d\"mui-switch-handle\"\u003e\u003c/div\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mswitchminiblue"
+  },
+  "mprogressbar(进度条-无限循环)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-progressbar mui-progressbar-infinite\"\u003e",
+      "\t\u003cspan\u003e\u003c/span\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mprogressbarinfinite"
+  },
+  "a_href_javascript": {
+    "body": [
+      "\u003ca href\u003d\"javascript:void(0);\"\u003e$1\u003c/a\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "ajsvoid"
+  },
+  "mSwitch(开关)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row\"\u003e",
+      "\t\u003clabel\u003e${2:Switch}\u003c/label\u003e",
+      "\t\u003cdiv class\u003d\"mui-switch${1: mui-active}\"\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-switch-handle\"\u003e\u003c/div\u003e",
+      "\t\u003c/div\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mswitch"
+  },
+  "mHeader(标题栏)": {
+    "body": [
+      "\u003cheader class\u003d\"mui-bar mui-bar-nav\"\u003e",
+      "\t\u003ch1 class\u003d\"mui-title\"\u003e${1:标题}\u003c/h1\u003e",
+      "\u003c/header\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mheader"
+  },
+  "mOffcanvas(侧滑导航-主界面移动、菜单不动)": {
+    "body": [
+      "\u003c!-- 主界面移动、菜单不动 --\u003e",
+      "\u003cdiv class\u003d\"mui-off-canvas-wrap mui-draggable\"\u003e",
+      "  \u003c!-- 菜单容器 --\u003e",
+      "  \u003caside class\u003d\"mui-off-canvas-left\" id\u003d\"offCanvasSide\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-scroll-wrapper\"\u003e",
+      "\t  \u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\u003c!-- 菜单具体展示内容 --\u003e",
+      "\t\t\t$1",
+      "\t  \u003c/div\u003e",
+      "\t\u003c/div\u003e",
+      "  \u003c/aside\u003e",
+      "  \u003c!-- 主页面容器 --\u003e",
+      "  \u003cdiv class\u003d\"mui-inner-wrap\"\u003e",
+      "\t\u003c!-- 主页面标题 --\u003e",
+      "\t\u003cheader class\u003d\"mui-bar mui-bar-nav\"\u003e",
+      "\t  \u003ca class\u003d\"mui-icon mui-action-menu mui-icon-bars mui-pull-left\"  href\u003d\"#offCanvasSide\" \u003e\u003c/a\u003e",
+      "\t  \u003ch1 class\u003d\"mui-title\"\u003e标题\u003c/h1\u003e",
+      "\t\u003c/header\u003e",
+      "\t\u003cnav class\u003d\"mui-bar mui-bar-tab\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item mui-active\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-home\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e首页\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-phone\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e电话\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-email\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e邮件\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-gear\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e设置\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/nav\u003e",
+      "\t\u003cdiv class\u003d\"mui-content mui-scroll-wrapper\"\u003e",
+      "\t  \u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\u003c!-- 主界面具体展示内容 --\u003e",
+      "\t\t \t$2",
+      "\t  \u003c/div\u003e",
+      "\t\u003c/div\u003e ",
+      "\t\u003cdiv class\u003d\"mui-off-canvas-backdrop\"\u003e\u003c/div\u003e",
+      "  \u003c/div\u003e ",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "moffcanvasmain"
+  },
+  "mText_Search(搜索框)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-search\"\u003e",
+      "\t\u003cinput type\u003d\"search\" class\u003d\"mui-input-clear\" placeholder\u003d\"$1\"\u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "minputsearch"
+  },
+  "mTabSegmented(可左右拖动的选项卡)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-slider\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-indicator mui-segmented-control mui-segmented-control-inverted\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item\" href\u003d\"#item1\"\u003e${1:选项卡1}\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item\" href\u003d\"#item2\"\u003e${2:选项卡2}\u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "\t\u003cdiv id\u003d\"sliderProgressBar\" class\u003d\"mui-slider-progress-bar mui-col-xs-6\"\u003e\u003c/div\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-group\"\u003e",
+      "\t\t\u003cdiv id\u003d\"item1\" class\u003d\"mui-slider-item mui-control-content mui-active\"\u003e",
+      "\t\t\t\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e${3:第1个选项卡子项}\u003c/li\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e${4:第1个选项卡子项}\u003c/li\u003e",
+      "\t\t\t\u003c/ul\u003e",
+      "\t\t\u003c/div\u003e",
+      "\t\t\u003cdiv id\u003d\"item2\" class\u003d\"mui-slider-item mui-control-content\"\u003e",
+      "\t\t\t\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e${5:第2个选项卡子项}\u003c/li\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e${6:第2个选项卡子项}\u003c/li\u003e",
+      "\t\t\t\u003c/ul\u003e",
+      "\t\t\u003c/div\u003e",
+      "\t\u003c/div\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mtabviewpage"
+  },
+  "mscrollsegmented(横向滚动)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item mui-active\"\u003e",
+      "\t\t\t${1:推荐}",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item\"\u003e",
+      "\t\t  ${2:热点}",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item\"\u003e",
+      "\t\t   ${3:北京}",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item\"\u003e",
+      "\t\t   ${4:社会}",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item\"\u003e",
+      "\t\t   ${5:娱乐}",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-control-item\"\u003e",
+      "\t\t   ${6:科技}",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mscrollsegmented"
+  },
+  "mPopover(弹出菜单)": {
+    "body": [
+      "${1:\u003cstyle type\u003d\"text\\/css\"\u003e",
+      "#popover{",
+      "\theight: 100px;",
+      "\twidth:200px;",
+      "\\}",
+      "\u003c\\/style\u003e}",
+      "\u003cdiv id\u003d\"popover\" class\u003d\"mui-popover\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-scroll-wrapper\"\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\t\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e\u003ca href\u003d\"#\"\u003eItem1\u003c/a\u003e\u003c/li\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e\u003ca href\u003d\"#\"\u003eItem2\u003c/a\u003e\u003c/li\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e\u003ca href\u003d\"#\"\u003eItem3\u003c/a\u003e\u003c/li\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e\u003ca href\u003d\"#\"\u003eItem4\u003c/a\u003e\u003c/li\u003e",
+      "\t\t\t\t\u003cli class\u003d\"mui-table-view-cell\"\u003e\u003ca href\u003d\"#\"\u003eItem5\u003c/a\u003e\u003c/li\u003e",
+      "\t\t\t\u003c/ul\u003e",
+      "\t\t\u003c/div\u003e",
+      "\t\u003c/div\u003e",
+      "\u003c/div\u003e",
+      "\u003ca href\u003d\"#popover\" id\u003d\"openPopover\" class\u003d\"mui-btn mui-btn-primary mui-btn-block\"\u003e打开弹出菜单\u003c/a\u003e",
+      "${2:mui(\u0027.mui-scroll-wrapper\u0027).scroll()}"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mpopover"
+  },
+  "mui-row": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-row\"\u003e",
+      "\t$0",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mrow"
+  },
+  "mIcon(图标)": {
+    "body": [
+      "\u003c${2:span} class\u003d\"mui-icon mui-icon-${1:weixin}\"\u003e\u003c/${2:span}\u003e"
+    ],
+    "triggerAssist": true,
+    "scope": "text.html.basic",
+    "prefix": "micon"
+  },
+  "mOffcanvas(侧滑导航-主界面、菜单同时移动)": {
+    "body": [
+      "\u003c!-- 主界面菜单同时移动 --\u003e",
+      "\t\u003c!-- 侧滑导航根容器 --\u003e",
+      "\t\u003cdiv class\u003d\"mui-off-canvas-wrap mui-draggable\"\u003e",
+      "\t\t\u003c!-- 主页面容器 --\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-inner-wrap\"\u003e",
+      "\t\t\t\u003c!-- 菜单容器 --\u003e",
+      "\t\t\t\u003caside class\u003d\"mui-off-canvas-left\" id\u003d\"offCanvasSide\"\u003e",
+      "\t\t\t\t\u003cdiv class\u003d\"mui-scroll-wrapper\"\u003e",
+      "\t\t\t\t\t\u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\t\t\t\t\u003c!-- 菜单具体展示内容 --\u003e",
+      "\t\t\t\t\t\t",
+      "\t\t\t\t\t\u003c/div\u003e",
+      "\t\t\t\t\u003c/div\u003e",
+      "\t\t\t\u003c/aside\u003e",
+      "\t\t\t\u003c!-- 主页面标题 --\u003e",
+      "\t\t\t\u003cheader class\u003d\"mui-bar mui-bar-nav\"\u003e",
+      "\t\t\t\t\u003ca class\u003d\"mui-icon mui-action-menu mui-icon-bars mui-pull-left\" href\u003d\"#offCanvasSide\"\u003e\u003c/a\u003e",
+      "\t\t\t\t\u003ch1 class\u003d\"mui-title\"\u003e标题\u003c/h1\u003e",
+      "\t\t\t\u003c/header\u003e",
+      "\t\t\t\u003cnav class\u003d\"mui-bar mui-bar-tab\"\u003e",
+      "\t\t\t\t\u003ca class\u003d\"mui-tab-item mui-active\"\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-home\"\u003e\u003c/span\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e首页\u003c/span\u003e",
+      "\t\t\t\t\u003c/a\u003e",
+      "\t\t\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-phone\"\u003e\u003c/span\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e电话\u003c/span\u003e",
+      "\t\t\t\t\u003c/a\u003e",
+      "\t\t\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-email\"\u003e\u003c/span\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e邮件\u003c/span\u003e",
+      "\t\t\t\t\u003c/a\u003e",
+      "\t\t\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-gear\"\u003e\u003c/span\u003e",
+      "\t\t\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e设置\u003c/span\u003e",
+      "\t\t\t\t\u003c/a\u003e",
+      "\t\t\t\u003c/nav\u003e",
+      "\t\t\t\u003c!-- 主页面内容容器 --\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-content mui-scroll-wrapper\"\u003e",
+      "\t\t\t\t\u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\t\t\t\u003c!-- 主界面具体展示内容 --\u003e",
+      "\t\t\t\t\t",
+      "\t\t\t\t\u003c/div\u003e",
+      "\t\t\t\u003c/div\u003e",
+      "\t   \t \u003cdiv class\u003d\"mui-off-canvas-backdrop\"\u003e\u003c/div\u003e",
+      "\t\t\u003c/div\u003e",
+      "\t\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "moffcanvasall"
+  },
+  "maccordion（折叠面板）": {
+    "body": [
+      "\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-collapse\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-navigate-right\" href\u003d\"#\"\u003e${1:面板1}\u003c/a\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-collapse-content\"\u003e",
+      "\t\t\t\u003cp\u003e${2:面板1子内容}\u003c/p\u003e",
+      "\t\t\u003c/div\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-collapse\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-navigate-right\" href\u003d\"#\"\u003e${3:面板}\u003c/a\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-collapse-content\"\u003e",
+      "\t\t\t\u003cp\u003e${4:面板2子内容}\u003c/p\u003e",
+      "\t\t\u003c/div\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-collapse\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-navigate-right\" href\u003d\"#\"\u003e${5:面板3}\u003c/a\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-collapse-content\"\u003e",
+      "\t\t\t\u003cp\u003e${6:面板3子内容}\u003c/p\u003e",
+      "\t\t\u003c/div\u003e",
+      "\t\u003c/li\u003e",
+      "\u003c/ul\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "maccordion"
+  },
+  "mrefreshContainer(刷新容器)": {
+    "body": [
+      "\u003c!--下拉刷新容器--\u003e",
+      "\u003cdiv id\u003d\"refreshContainer\" class\u003d\"mui-content mui-scroll-wrapper\"\u003e",
+      "  \u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\u003c!--数据列表--\u003e",
+      "\t\u003cul class\u003d\"mui-table-view mui-table-view-chevron\"\u003e",
+      "\t  $0",
+      "\t\u003c/ul\u003e",
+      "  \u003c/div\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mpullrefresh"
+  },
+  "mCheckbox(复选框)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-checkbox \"\u003e",
+      "\t\u003clabel\u003e${1:Checkbox}\u003c/label\u003e",
+      "\t\u003cinput name\u003d\"${3:Checkbox}\" type\u003d\"checkbox\" ${2:checked}\u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mcheckbox"
+  },
+  "mButton(按钮无底色,有边框)": {
+    "body": [
+      "\u003cbutton type\u003d\"button\" class\u003d\"mui-btn ${1:mui-btn-blue/mui-btn-green/mui-btn-yellow/mui-btn-red/mui-btn-purple/mui-btn-grey} mui-btn-outlined\"\u003e${2:按钮}\u003c/button\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mbutton_outline"
+  },
+  "mRadio(禁用单选框)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-radio mui-disabled\"\u003e",
+      "\t\u003clabel\u003e${1:Radio}\u003c/label\u003e",
+      "\t\u003cinput name\u003d\"${3:radio}\" type\u003d\"radio\" disabled\u003d\"disabled\"\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mradio_disable"
+  },
+  "mGallery图片轮播": {
+    "body": [
+      "\u003cdiv id\u003d\"slider\" class\u003d\"mui-slider\" \u003e",
+      "  \u003cdiv class\u003d\"mui-slider-group mui-slider-loop\"\u003e",
+      "\t\u003c!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) --\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item mui-slider-item-duplicate\"\u003e",
+      "\t  \u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cimg src\u003d\"${1:http:\\/\\/placehold.it\\/400x300}\"\u003e",
+      "\t  \u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "\t\u003c!-- 第一张 --\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item\"\u003e",
+      "\t  \u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cimg src\u003d\"${2:http:\\/\\/placehold.it\\/400x300}\"\u003e",
+      "\t  \u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "\t\u003c!-- 第二张 --\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item\"\u003e",
+      "\t  \u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cimg src\u003d\"${3:http:\\/\\/placehold.it\\/400x300}\"\u003e",
+      "\t  \u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "\t\u003c!-- 第三张 --\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item\"\u003e",
+      "\t  \u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cimg src\u003d\"${4:http:\\/\\/placehold.it\\/400x300}\"\u003e",
+      "\t  \u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "\t\u003c!-- 第四张 --\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item\"\u003e",
+      "\t  \u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cimg src\u003d\"${1:http:\\/\\/placehold.it\\/400x300}\"\u003e",
+      "\t  \u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "\t\u003c!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) --\u003e",
+      "\t\u003cdiv class\u003d\"mui-slider-item mui-slider-item-duplicate\"\u003e",
+      "\t  \u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cimg src\u003d\"${2:http:\\/\\/placehold.it\\/400x300}\"\u003e",
+      "\t  \u003c/a\u003e",
+      "\t\u003c/div\u003e",
+      "  \u003c/div\u003e",
+      "  \u003cdiv class\u003d\"mui-slider-indicator\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-indicator mui-active\"\u003e\u003c/div\u003e",
+      "\t\u003cdiv class\u003d\"mui-indicator\"\u003e\u003c/div\u003e",
+      "\t\u003cdiv class\u003d\"mui-indicator\"\u003e\u003c/div\u003e",
+      "\t\u003cdiv class\u003d\"mui-indicator\"\u003e\u003c/div\u003e",
+      "  \u003c/div\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mslider_gallery"
+  },
+  "div_class": {
+    "body": [
+      "\u003cdiv class\u003d\"$1\"\u003e",
+      "\t$0",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": true,
+    "scope": "text.html.basic",
+    "prefix": "divc"
+  },
+  "mGrid(九宫格)": {
+    "body": [
+      "\u003cul class\u003d\"mui-table-view mui-grid-view mui-grid-9\"\u003e",
+      "\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3\"\u003e",
+      "\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-home\"\u003e\u003c/span\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${1:Home}\u003c/div\u003e",
+      "\t\u003c/a\u003e",
+      "\u003c/li\u003e",
+      "\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3\"\u003e",
+      "\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-email\"\u003e\u003cspan class\u003d\"mui-badge mui-badge-red\"\u003e5\u003c/span\u003e\u003c/span\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${2:Email}\u003c/div\u003e",
+      "\t\u003c/a\u003e",
+      "\u003c/li\u003e",
+      "\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3\"\u003e",
+      "\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-chatbubble\"\u003e\u003c/span\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${3:Chat}\u003c/div\u003e",
+      "\t\u003c/a\u003e",
+      "\u003c/li\u003e",
+      "\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3\"\u003e",
+      "\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-location\"\u003e\u003c/span\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${4:Location}\u003c/div\u003e",
+      "\t\u003c/a\u003e",
+      "\u003c/li\u003e",
+      "\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3\"\u003e",
+      "\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-search\"\u003e\u003c/span\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${5:Search}\u003c/div\u003e",
+      "\t\u003c/a\u003e",
+      "\u003c/li\u003e",
+      "\u003cli class\u003d\"mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3\"\u003e",
+      "\t\u003ca href\u003d\"#\"\u003e",
+      "\t\t\u003cspan class\u003d\"mui-icon mui-icon-phone\"\u003e\u003c/span\u003e",
+      "\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e${6:Phone}\u003c/div\u003e",
+      "\t\u003c/a\u003e",
+      "\u003c/li\u003e",
+      "\t\u003c/ul\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mgrid"
+  },
+  "mactionsheet（操作表）": {
+    "body": [
+      "\u003cdiv id\u003d\"sheet1\" class\u003d\"mui-popover mui-popover-bottom mui-popover-action \"\u003e",
+      "\t\u003c!-- 可选择菜单 --\u003e",
+      "\t\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t  \u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e${1菜单1}\u003c/a\u003e",
+      "\t  \u003c/li\u003e",
+      "\t  \u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e${2菜单2}\u003c/a\u003e",
+      "\t  \u003c/li\u003e",
+      "\t\u003c/ul\u003e",
+      "\t\u003c!-- 取消菜单 --\u003e",
+      "\t\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t  \u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca href\u003d\"#sheet1\"\u003e\u003cb\u003e${3取消}\u003c/b\u003e\u003c/a\u003e",
+      "\t  \u003c/li\u003e",
+      "\t\u003c/ul\u003e",
+      "\u003c/div\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "actionsheet"
+  },
+  "mbadge（数字角标无底色）": {
+    "body": [
+      "\u003cspan class\u003d\"mui-badge mui-badge-inverted ${1:mui-btn-blue/mui-btn-green/mui-btn-yellow/mui-btn-red/mui-btn-purple/mui-btn-grey}\"\u003e${2:1}\u003c/span\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mbadgeinverted"
+  },
+  "mListMedia(图文列表图片居右)": {
+    "body": [
+      "\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media\"\u003e",
+      "\t\t\u003ca href\u003d\"javascript:;\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object mui-pull-right\" src\u003d\"${1}\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e",
+      "\t\t\t\t${4:幸福}",
+      "\t\t\t\t\u003cp class\u003d\"mui-ellipsis\"\u003e${5:能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？}\u003c/p\u003e",
+      "\t\t\t\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media\"\u003e",
+      "\t\t\u003ca href\u003d\"javascript:;\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object mui-pull-right\" src\u003d\"${2}\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e",
+      "\t\t\t\t${6:木屋}",
+      "\t\t\t\t\u003cp class\u003d\"mui-ellipsis\"\u003e${7:想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.}\u003c/p\u003e",
+      "\t\t\t\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media\"\u003e",
+      "\t\t\u003ca href\u003d\"javascript:;\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object mui-pull-right\" src\u003d\"${3}\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e",
+      "\t\t\t   ${8: CBD}",
+      "\t\t\t\t\u003cp class\u003d\"mui-ellipsis\"\u003e${9:烤炉模式的城，到黄昏，如同打翻的调色盘一般.}\u003c/p\u003e",
+      "\t\t\t\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\u003c/ul\u003e$0"
+    ],
+    "triggerAssist": true,
+    "scope": "text.html.basic",
+    "prefix": "mlist_Media_right"
+  },
+  "mBody(主体)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-content\"\u003e",
+      "\t$0",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mbody"
+  },
+  "mText_Speech(语音输入)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row\"\u003e",
+      "\t\u003clabel\u003e${2:Input}\u003c/label\u003e",
+      "\t\u003cinput type\u003d\"text\" class\u003d\"mui-input-speech mui-input-clear\" placeholder\u003d\"${1:语音输入}\"\u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "minputspeech"
+  },
+  "mActionsheet(H5模式弹出菜单)": {
+    "body": [
+      "\u003cdiv id\u003d\"sheet\" class\u003d\"mui-popover mui-popover-bottom mui-popover-action \"\u003e",
+      "\t\u003c!-- 可选择菜单 --\u003e",
+      "\t\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t  \u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e${1:菜单1}\u003c/a\u003e",
+      "\t  \u003c/li\u003e",
+      "\t  \u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca href\u003d\"#\"\u003e${2:菜单2}\u003c/a\u003e",
+      "\t  \u003c/li\u003e",
+      "\t\u003c/ul\u003e",
+      "\t\u003c!-- 取消菜单 --\u003e",
+      "\t\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t  \u003cli class\u003d\"mui-table-view-cell\"\u003e",
+      "\t\t\u003ca href\u003d\"#sheet1\"\u003e\u003cb\u003e${4:取消}\u003c/b\u003e\u003c/a\u003e",
+      "\t  \u003c/li\u003e",
+      "\t\u003c/ul\u003e",
+      "\u003c/div\u003e",
+      "\u003ca href\u003d\"#sheet\" id\u003d\"openSheet\" class\u003d\"mui-btn mui-btn-primary mui-btn-block\"\u003e${3:打开操作表}\u003c/a\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mactionsheet"
+  },
+  "mHeader(带返回箭头的标题栏)": {
+    "body": [
+      "\u003cheader class\u003d\"mui-bar mui-bar-nav\"\u003e",
+      "\t\u003ca class\u003d\"mui-action-back mui-icon mui-icon-left-nav mui-pull-left\"\u003e\u003c/a\u003e",
+      "\t\u003ch1 class\u003d\"mui-title\"\u003e${1:标题}\u003c/h1\u003e",
+      "\u003c/header\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mheaderwithBack"
+  },
+  "mListMedia(图文列表图片居左)": {
+    "body": [
+      "\u003cul class\u003d\"mui-table-view\"\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media\"\u003e",
+      "\t\t\u003ca href\u003d\"javascript:;\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object mui-pull-left\" src\u003d\"${1}\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e",
+      "\t\t\t\t${4:幸福}",
+      "\t\t\t\t\u003cp class\u003d\"mui-ellipsis\"\u003e${5:能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？}\u003c/p\u003e",
+      "\t\t\t\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media\"\u003e",
+      "\t\t\u003ca href\u003d\"javascript:;\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object mui-pull-left\" src\u003d\"${2}\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e",
+      "\t\t\t\t${6:木屋}",
+      "\t\t\t\t\u003cp class\u003d\"mui-ellipsis\"\u003e${7:想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.}\u003c/p\u003e",
+      "\t\t\t\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\t\u003cli class\u003d\"mui-table-view-cell mui-media\"\u003e",
+      "\t\t\u003ca href\u003d\"javascript:;\"\u003e",
+      "\t\t\t\u003cimg class\u003d\"mui-media-object mui-pull-left\" src\u003d\"${3}\"\u003e",
+      "\t\t\t\u003cdiv class\u003d\"mui-media-body\"\u003e",
+      "\t\t\t   ${8: CBD}",
+      "\t\t\t\t\u003cp class\u003d\"mui-ellipsis\"\u003e${9:烤炉模式的城，到黄昏，如同打翻的调色盘一般.}\u003c/p\u003e",
+      "\t\t\t\u003c/div\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/li\u003e",
+      "\u003c/ul\u003e$0"
+    ],
+    "triggerAssist": true,
+    "scope": "text.html.basic",
+    "prefix": "mlist_Media_left"
+  },
+  "mText(文本框)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row\"\u003e",
+      "\t\u003clabel\u003e${3:Input}\u003c/label\u003e",
+      "\t\u003cinput type\u003d\"${1:text}\" placeholder\u003d\"${2:普通输入框}\"\u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": true,
+    "scope": "text.html.basic",
+    "prefix": "minputtext"
+  },
+  "mCheckbox(复选框禁用选项)": {
+    "body": [
+      "\u003cdiv class\u003d\"mui-input-row mui-checkbox mui-disabled\"\u003e",
+      "\t\u003clabel\u003e${1:disabled checkbox}\u003c/label\u003e",
+      "\t\u003cinput name\u003d\"checkbox\" type\u003d\"checkbox\" ${2:disabled\u003d\"disabled\"}\u003e",
+      "\u003c/div\u003e",
+      "$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mcheckbox_disabled"
+  },
+  "mOffcanvas(侧滑导航-主界面不动、菜单移动)": {
+    "body": [
+      "\u003c!-- 主界面不动、菜单移动 --\u003e",
+      "\u003c!-- 侧滑导航根容器 --\u003e",
+      "\u003cdiv class\u003d\"mui-off-canvas-wrap mui-draggable mui-slide-in\"\u003e",
+      "  \u003c!-- 菜单容器 --\u003e",
+      "  \u003caside class\u003d\"mui-off-canvas-left\" id\u003d\"offCanvasSide\"\u003e",
+      "\t\u003cdiv class\u003d\"mui-scroll-wrapper\"\u003e",
+      "\t  \u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\u003c!-- 菜单具体展示内容 --\u003e",
+      "\t\t$1",
+      "\t  \u003c/div\u003e",
+      "\t\u003c/div\u003e",
+      "  \u003c/aside\u003e",
+      "  \u003c!-- 主页面容器 --\u003e",
+      "  \u003cdiv class\u003d\"mui-inner-wrap\"\u003e",
+      "\t\u003c!-- 主页面标题 --\u003e",
+      "\t\u003cheader class\u003d\"mui-bar mui-bar-nav\"\u003e",
+      "\t  \u003ca class\u003d\"mui-icon mui-action-menu mui-icon-bars mui-pull-left\" href\u003d\"#offCanvasSide\"\u003e\u003c/a\u003e",
+      "\t  \u003ch1 class\u003d\"mui-title\"\u003e标题\u003c/h1\u003e",
+      "\t\u003c/header\u003e",
+      "\t\u003cnav class\u003d\"mui-bar mui-bar-tab\"\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item mui-active\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-home\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e首页\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-phone\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e电话\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-email\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e邮件\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\t\u003ca class\u003d\"mui-tab-item\"\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-icon mui-icon-gear\"\u003e\u003c/span\u003e",
+      "\t\t\t\u003cspan class\u003d\"mui-tab-label\"\u003e设置\u003c/span\u003e",
+      "\t\t\u003c/a\u003e",
+      "\t\u003c/nav\u003e",
+      "\t\u003cdiv class\u003d\"mui-content mui-scroll-wrapper\"\u003e",
+      "\t  \u003cdiv class\u003d\"mui-scroll\"\u003e",
+      "\t\t\u003c!-- 主界面具体展示内容 --\u003e",
+      "\t\t$2",
+      "\t  \u003c/div\u003e",
+      "\t\u003c/div\u003e  ",
+      "\t\u003cdiv class\u003d\"mui-off-canvas-backdrop\"\u003e\u003c/div\u003e",
+      "  \u003c/div\u003e",
+      "\u003c/div\u003e"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "moffcanvasmenu"
+  },
+  "mButton(块状按钮)": {
+    "body": [
+      "\u003cbutton type\u003d\"button\" class\u003d\"mui-btn ${1:mui-btn-blue/mui-btn-green/mui-btn-yellow/mui-btn-red/mui-btn-purple/mui-btn-grey} mui-btn-block\"\u003e${2:按钮}\u003c/button\u003e$0"
+    ],
+    "triggerAssist": false,
+    "scope": "text.html.basic",
+    "prefix": "mbutton_block"
+  }
+}

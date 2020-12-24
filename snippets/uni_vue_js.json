@@ -1,0 +1,232 @@
+{
+    "uRequest": {
+        "body": [
+            "uni.request({",
+            "\turl: '$1',",
+            "\tmethod: 'GET$2',",
+            "\tdata: {$3},",
+            "\tsuccess: res => {$0},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "urequest"
+    },
+    "uGetLocation": {
+        "body": [
+            "uni.getLocation({",
+            "\ttype: 'wgs84',",
+            "\tsuccess: res => {$0}",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ugetlocation"
+    },
+    "uShowToast": {
+        "body": [
+            "uni.showToast({",
+            "\ttitle: '$1'",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ushowtoast"
+    },
+    "uShowToastNoIcon": {
+        "body": [
+            "uni.showToast({",
+            "\ttitle: '$1',",
+            "\ticon: 'none'",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ushowtoastnoicon"
+    },
+    "uShowLoading": {
+        "body": [
+            "uni.showLoading({",
+            "\ttitle: '$1',",
+            "\tmask: false",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ushowloading"
+    },
+    "uShowModal": {
+        "body": [
+            "uni.showModal({",
+            "\ttitle: '$1',",
+            "\tcontent: '$2',",
+            "\tshowCancel: false$3,",
+            "\tcancelText: '$4',",
+            "\tconfirmText: '$5',",
+            "\tsuccess: res => {$0},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ushowmodal"
+    },
+    "uAlert": {
+        "body": [
+            "uni.showModal({",
+            "\tcontent: '$1',",
+            "\tshowCancel: false",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ualert"
+    },
+    "uConfirm": {
+        "body": [
+            "uni.showModal({",
+            "\tcontent: '$1',",
+            "\tsuccess: function (res) {",
+            "\t\tif (res.confirm) {",
+            "\t\t\t$2",
+            "\t\t} else if (res.cancel) {",
+            "\t\t\t$3",
+            "\t\t}",
+            "\t}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "uconfirm"
+    },
+    "uShowActionSheet": {
+        "body": [
+            "uni.showActionSheet({",
+            "\titemList: $1,",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ushowactionsheet"
+    },
+    "uNavigateTo": {
+        "body": [
+            "uni.navigateTo({",
+            "\turl: '$1',",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "unavigateto"
+    },
+    "uRedirectTo": {
+        "body": [
+            "uni.redirectTo({",
+            "\turl: '$1',",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "uredirectto"
+    },
+    "uNavigateBack": {
+        "body": [
+            "uni.navigateBack({",
+            "\tdelta: $1",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "unavigateback"
+    },
+    "uStartPullDownRefresh": {
+        "body": [
+            "uni.startPullDownRefresh({",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ustartpulldownrefresh"
+    },
+    "uStopPullDownRefresh": {
+        "body": [
+            "uni.stopPullDownRefresh();"
+        ],
+        "triggerAssist": false,
+        "prefix": "ustoppulldownrefresh"
+    },
+    "uLogin": {
+        "body": [
+            "uni.login({",
+            "\tprovider: '$1',",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ulogin"
+    },
+    "uShare": {
+        "body": [
+            "uni.share({",
+            "\tprovider: '$1',",
+            "\ttype: 0$2,",
+            "\ttitle: '$3',",
+            "\thref: '$4',",
+            "\timageUrl: '$5',",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "ushare"
+    },
+    "uRequestPayment": {
+        "body": [
+            "uni.requestPayment({",
+            "\tprovider: '$1',",
+            "\torderInfo: '$2',",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "urequestpayment"
+    },
+    "uPay": {
+        "body": [
+            "uni.requestPayment({",
+            "\tprovider: '$1',",
+            "\torderInfo: '$2',",
+            "\tsuccess: res => {},",
+            "\tfail: () => {},",
+            "\tcomplete: () => {}",
+            "});"
+        ],
+        "triggerAssist": false,
+        "prefix": "upay"
+    },
+    "globalData": {
+        "body": [
+            "getApp().globalData."
+        ],
+        "triggerAssist": true,
+        "prefix": "gdata"
+    },
+    "cdb": {
+        "body": [
+            "const db = uniCloud.database();",
+            "$0"
+        ],
+        "prefix": "cdb",
+        "project": "uni-app",
+        "scope": "source.js"
+    }
+}

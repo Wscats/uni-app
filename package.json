@@ -1,0 +1,137 @@
+{
+    "name": "uni-app",
+    "displayName": "Uni App Snippets",
+    "description": "Support commonly used code snippets in Hbuilder/HbuilderX.",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "icon": "images/uni-app.jpg",
+    "author": {
+        "name": "Eno Yao",
+        "email": "kalone.cool@gmail.com",
+        "url": "https://github.com/Wscats"
+    },
+    "publisher": "Wscats",
+    "keywords": [
+        "uniapp",
+        "uni-app",
+        "mui",
+        "plusjs",
+        "hbuilder"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "scripts": {
+        "package": "vsce package"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/mui 2.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/nml.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/ux.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/uni_vue_tag.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue-template.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/condition_comment 2.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/condition_comment 2.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/undisplay.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript 2.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/javascript 2.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/mui.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/uni_vue_js.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/javascriptreact.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/vue-script.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/vue-script 2.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/condition_comment.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/condition_comment.json"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/vue-html.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/css.json"
+            },
+            {
+                "language": "less",
+                "path": "./snippets/css.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/css.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/css.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    }
+}

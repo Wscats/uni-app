@@ -1,0 +1,866 @@
+{
+  "a_href": {
+    "body": [
+      "<a href=\"$1\">$0</a>"
+    ],
+    "triggerAssist": true,
+    "prefix": "ahref"
+  },
+  "a_mailto": {
+    "body": [
+      "<a href=\"mailto:$1\">$0</a>"
+    ],
+    "triggerAssist": false,
+    "prefix": "amail"
+  },
+  "applet": {
+    "body": [
+      "<applet code=\"$1\" width=\"$2\" height=\"$3\">\n$0\n</applet>"
+    ],
+    "triggerAssist": false,
+    "prefix": "applet"
+  },
+  "area": {
+    "body": [
+      "<area shape=\"$1\" coords=\"$3\" href =\"$2\" alt=\"$0\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "area"
+  },
+  "b": {
+    "body": [
+      "<b>$0</b>"
+    ],
+    "triggerAssist": false,
+    "prefix": "b"
+  },
+  "base": {
+    "body": [
+      "<base href=\"$0\" target=\"$1\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "base"
+  },
+  "basefont": {
+    "body": [
+      "<basefont color=\"$0\" size=\"$1\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "basefont"
+  },
+  "bdo": {
+    "body": [
+      "<bdo dir=\"$0\"></bdo>"
+    ],
+    "triggerAssist": false,
+    "prefix": "bdo"
+  },
+  "big": {
+    "body": [
+      "<big>$0</big>"
+    ],
+    "triggerAssist": false,
+    "prefix": "big"
+  },
+  "blockquote": {
+    "body": [
+      "<blockquote>",
+      "\t$0",
+      "</blockquote>"
+    ],
+    "triggerAssist": false,
+    "prefix": "blockquote"
+  },
+  "body": {
+    "body": [
+      "<body>",
+      "\t$0",
+      "</body>"
+    ],
+    "triggerAssist": false,
+    "prefix": "body"
+  },
+  "br": {
+    "body": [
+      "<br>"
+    ],
+    "triggerAssist": false,
+    "prefix": "br"
+  },
+  "button": {
+    "body": [
+      "<button type=\"button\">$0</button>"
+    ],
+    "triggerAssist": false,
+    "prefix": "button"
+  },
+  "caption": {
+    "body": [
+      "<caption>$0</caption>"
+    ],
+    "triggerAssist": false,
+    "prefix": "caption"
+  },
+  "center": {
+    "body": [
+      "<center>$0</center>"
+    ],
+    "triggerAssist": false,
+    "prefix": "center"
+  },
+  "cite": {
+    "body": [
+      "<cite>$0</cite>"
+    ],
+    "triggerAssist": false,
+    "prefix": "cite"
+  },
+  "code": {
+    "body": [
+      "<code>$0</code>"
+    ],
+    "triggerAssist": false,
+    "prefix": "code"
+  },
+  "col": {
+    "body": [
+      "<col>$0"
+    ],
+    "triggerAssist": false,
+    "prefix": "col"
+  },
+  "colgroup": {
+    "body": [
+      "<colgroup>$0</colgroup>"
+    ],
+    "triggerAssist": false,
+    "prefix": "colgroup"
+  },
+  "del": {
+    "body": [
+      "<del>$0</del>"
+    ],
+    "triggerAssist": false,
+    "prefix": "del"
+  },
+  "dfn": {
+    "body": [
+      "<dfn>$0</dfn>"
+    ],
+    "triggerAssist": false,
+    "prefix": "dfn"
+  },
+  "dl": {
+    "body": [
+      "<dl>$0</dl>"
+    ],
+    "triggerAssist": false,
+    "prefix": "dl"
+  },
+  "dt": {
+    "body": [
+      "<dt>$0</dt>"
+    ],
+    "triggerAssist": false,
+    "prefix": "dt"
+  },
+  "em": {
+    "body": [
+      "<em>$0</em>"
+    ],
+    "triggerAssist": false,
+    "prefix": "em"
+  },
+  "font": {
+    "body": [
+      "<font size=\"$1\" color=\"$2\">$0</font>"
+    ],
+    "triggerAssist": false,
+    "prefix": "font"
+  },
+  "form": {
+    "body": [
+      "<form action=\"$1\" method=\"$2\">",
+      "\t$0",
+      "</form>"
+    ],
+    "triggerAssist": false,
+    "prefix": "form"
+  },
+  "frame": {
+    "body": [
+      "<frame src=\"$0\" >"
+    ],
+    "triggerAssist": false,
+    "prefix": "frame"
+  },
+  "frameset": {
+    "body": [
+      "<frameset cols=\"$1\">",
+      "\t$0",
+      "</frameset>"
+    ],
+    "triggerAssist": false,
+    "prefix": "frameset"
+  },
+  "hr": {
+    "body": [
+      "<hr >$0"
+    ],
+    "triggerAssist": false,
+    "prefix": "hr"
+  },
+  "html": {
+    "body": [
+      "<!DOCTYPE html>",
+      "<html>",
+      "\t<head>",
+      "\t\t<meta charset=\"utf-8\" />",
+      "\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "\t\t<title>$0</title>",
+      "\t</head>",
+      "\t<body>",
+      "\t\t",
+      "\t</body>",
+      "</html>"
+    ],
+    "triggerAssist": false,
+    "prefix": "html"
+  },
+  "i": {
+    "body": [
+      "<i>$0</i>"
+    ],
+    "triggerAssist": false,
+    "prefix": "i"
+  },
+  "ins": {
+    "body": [
+      "<ins>$0</ins>"
+    ],
+    "triggerAssist": false,
+    "prefix": "ins"
+  },
+  "kbd": {
+    "body": [
+      "<kbd>$0</kbd>"
+    ],
+    "triggerAssist": false,
+    "prefix": "kbd"
+  },
+  "label": {
+    "body": [
+      "<label>$0</label>"
+    ],
+    "triggerAssist": false,
+    "prefix": "label"
+  },
+  "legend": {
+    "body": [
+      "<legend>$0</legend>"
+    ],
+    "triggerAssist": false,
+    "prefix": "legend"
+  },
+  "li": {
+    "body": [
+      "<li>$0</li>"
+    ],
+    "triggerAssist": false,
+    "prefix": "li"
+  },
+  "map": {
+    "body": [
+      "<map name=\"$1\">",
+      "\t$0",
+      "</map>"
+    ],
+    "triggerAssist": false,
+    "prefix": "map"
+  },
+  "noframes": {
+    "body": [
+      "<noframes>",
+      "\t$0",
+      "</noframes>"
+    ],
+    "triggerAssist": false,
+    "prefix": "noframes"
+  },
+  "noscript": {
+    "body": [
+      "<noscript>$0</noscript>"
+    ],
+    "triggerAssist": false,
+    "prefix": "noscript"
+  },
+  "object": {
+    "body": [
+      "<object>",
+      "\t$0",
+      "</object>"
+    ],
+    "triggerAssist": false,
+    "prefix": "object"
+  },
+  "ol": {
+    "body": [
+      "<ol>",
+      "\t$0",
+      "</ol>"
+    ],
+    "triggerAssist": false,
+    "prefix": "ol"
+  },
+  "option": {
+    "body": [
+      "<option value =\"$1\">$0</option>"
+    ],
+    "triggerAssist": false,
+    "prefix": "option"
+  },
+  "p": {
+    "body": [
+      "<p>$0</p>"
+    ],
+    "triggerAssist": false,
+    "prefix": "p"
+  },
+  "optgroup": {
+    "body": [
+      "<optgroup>",
+      "\t$0",
+      "</optgroup>"
+    ],
+    "triggerAssist": false,
+    "prefix": "optgroup"
+  },
+  "param": {
+    "body": [
+      "<param name=\"$0\" value=\"$1\">"
+    ],
+    "triggerAssist": false,
+    "prefix": "param"
+  },
+  "pre": {
+    "body": [
+      "<pre>",
+      "\t$0",
+      "</pre>"
+    ],
+    "triggerAssist": false,
+    "prefix": "pre"
+  },
+  "select": {
+    "body": [
+      "<select>",
+      "\t$0",
+      "</select>"
+    ],
+    "triggerAssist": false,
+    "prefix": "select"
+  },
+  "small": {
+    "body": [
+      "<small>$0</small>"
+    ],
+    "triggerAssist": false,
+    "prefix": "small"
+  },
+  "span": {
+    "body": [
+      "<span>$0</span>"
+    ],
+    "triggerAssist": false,
+    "prefix": "span"
+  },
+  "strike": {
+    "body": [
+      "<strike>$0</strike>"
+    ],
+    "triggerAssist": false,
+    "prefix": "strike"
+  },
+  "strong": {
+    "body": [
+      "<strong>$0</strong>"
+    ],
+    "triggerAssist": false,
+    "prefix": "strong"
+  },
+  "sub": {
+    "body": [
+      "<sub>$0</sub>"
+    ],
+    "triggerAssist": false,
+    "prefix": "sub"
+  },
+  "sup": {
+    "body": [
+      "<sup>$0</sup>"
+    ],
+    "triggerAssist": false,
+    "prefix": "sup"
+  },
+  "tbody": {
+    "body": [
+      "<tbody>",
+      "\t$0",
+      "</tbody>"
+    ],
+    "triggerAssist": false,
+    "prefix": "tbody"
+  },
+  "tfoot": {
+    "body": [
+      "<tfoot>",
+      "\t$0",
+      "</tfoot>"
+    ],
+    "triggerAssist": false,
+    "prefix": "tfoot"
+  },
+  "tr": {
+    "body": [
+      "<tr>$0</tr>"
+    ],
+    "triggerAssist": false,
+    "prefix": "tr"
+  },
+  "td": {
+    "body": [
+      "<td>$0</td>"
+    ],
+    "triggerAssist": false,
+    "prefix": "td"
+  },
+  "th": {
+    "body": [
+      "<th>$0</th>"
+    ],
+    "triggerAssist": false,
+    "prefix": "th"
+  },
+  "thead": {
+    "body": [
+      "<thead>$0</thead>"
+    ],
+    "triggerAssist": false,
+    "prefix": "thead"
+  },
+  "textarea": {
+    "body": [
+      "<textarea rows=\"$1\" cols=\"$2\">",
+      "\t$0",
+      "</textarea>"
+    ],
+    "triggerAssist": false,
+    "prefix": "textarea"
+  },
+  "title": {
+    "body": [
+      "<title>$0</title>"
+    ],
+    "triggerAssist": false,
+    "prefix": "title"
+  },
+  "tt": {
+    "body": [
+      "<tt>$0</tt>"
+    ],
+    "triggerAssist": false,
+    "prefix": "tt"
+  },
+  "ul": {
+    "body": [
+      "<ul>",
+      "\t$0",
+      "</ul>"
+    ],
+    "triggerAssist": false,
+    "prefix": "ul"
+  },
+  "var": {
+    "body": [
+      "<var>$0</var>"
+    ],
+    "triggerAssist": false,
+    "prefix": "var"
+  },
+  "meta_keywords": {
+    "body": [
+      "<meta name=\"Keywords\" content=\"$1\"/>"
+    ],
+    "triggerAssist": false,
+    "prefix": "metakeywords"
+  },
+  "meta_nocache": {
+    "body": [
+      "<meta http-equiv=\"Pragma\" content=\"no-cache\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "metanocache"
+  },
+  "script": {
+    "body": [
+      "<script type=\"text/javascript\">",
+      "\t$0",
+      "</script>"
+    ],
+    "triggerAssist": false,
+    "prefix": "script"
+  },
+  "script src": {
+    "body": [
+      "<script src=\"$1\" type=\"text/javascript\" charset=\"${3:utf-8}\"></script>"
+    ],
+    "triggerAssist": true,
+    "prefix": "scsrc"
+  },
+  "script html5plus": {
+    "body": [
+      "<script src=\"html5plus://ready\"></script>"
+    ],
+    "triggerAssist": false,
+    "description": "html5plus提前注入时需要加上此script块",
+    "prefix": "sctplus"
+  },
+  "h5": {
+    "body": [
+      "<h5>$0</h5>"
+    ],
+    "triggerAssist": false,
+    "prefix": "h5"
+  },
+  "ul_li": {
+    "body": [
+      "<ul>",
+      "\t<li>$1</li>",
+      "</ul>"
+    ],
+    "triggerAssist": false,
+    "prefix": "ul"
+  },
+  "h4": {
+    "body": [
+      "<h4>$0</h4>"
+    ],
+    "triggerAssist": false,
+    "prefix": "h4"
+  },
+  "h6": {
+    "body": [
+      "<h6>$0</h6>"
+    ],
+    "triggerAssist": false,
+    "prefix": "h6"
+  },
+  "head": {
+    "body": [
+      "<head>",
+      "\t<meta charset=\"utf-8\"/>",
+      "\t<title>$1</title>",
+      "\t",
+      "</head>"
+    ],
+    "triggerAssist": false,
+    "prefix": "head"
+  },
+  "h1": {
+    "body": [
+      "<h1>$0</h1>"
+    ],
+    "triggerAssist": false,
+    "prefix": "h1"
+  },
+  "audio": {
+    "body": [
+      "<audio src=\"$0\" >",
+      "\t当前浏览器不支持audio",
+      "</audio>"
+    ],
+    "triggerAssist": true,
+    "prefix": "audio"
+  },
+  "video": {
+    "body": [
+      "<video width=\"${1:800}\" height=\"$2\">",
+      "\t<source src=\"${3:myvideo.mp4}\" type=\"video/mp4\"></source>",
+      "\t<source src=\"${4:myvideo.ogv}\" type=\"video/ogg\"></source>",
+      "\t<source src=\"${5:myvideo.webm}\" type=\"video/webm\"></source>",
+      "\t<object width=\"$6\" height=\"$7\" type=\"application/x-shockwave-flash\" data=\"${8:myvideo.swf}\">",
+      "\t\t<param name=\"movie\" value=\"$8\" />",
+      "\t\t<param name=\"flashvars\" value=\"autostart=true\u0026amp;file=$8\" />",
+      "\t</object>",
+      "\t当前浏览器不支持 video直接播放，点击这里下载视频： <a href=\"${9:myvideo.webm}\">下载视频</a>",
+      "</video>"
+    ],
+    "triggerAssist": false,
+    "prefix": "video"
+  },
+  "h3": {
+    "body": [
+      "<h3>$0</h3>"
+    ],
+    "triggerAssist": false,
+    "prefix": "h3"
+  },
+  "h2": {
+    "body": [
+      "<h2>$0</h2>"
+    ],
+    "triggerAssist": false,
+    "prefix": "h2"
+  },
+  "data-": {
+    "body": [
+      "data-${1:type} = \"$2\""
+    ],
+    "triggerAssist": false,
+    "scope": "HTML_ATTRIBUTE",
+    "prefix": "data-"
+  },
+  "input_submit": {
+    "body": [
+      "<input type=\"submit\" id=\"$1\" name=\"$2\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "insubmit"
+  },
+  "ng-pluralize": {
+    "body": [
+      "<ng-pluralize>$1</ng-pluralize>"
+    ],
+    "triggerAssist": false,
+    "prefix": "ngp"
+  },
+  "canvas": {
+    "body": [
+      "<canvas id=\"$1\" width=\"$2\" height=\"$3\"></canvas>"
+    ],
+    "triggerAssist": false,
+    "prefix": "canvas"
+  },
+  "table": {
+    "body": [
+      "<table border=\"$1\" cellspacing=\"$2\" cellpadding=\"$3\">",
+      "\t<tr><th>${4:Header}</th></tr>",
+      "\t<tr><td>${5:Data}</td></tr>",
+      "</table>"
+    ],
+    "triggerAssist": false,
+    "prefix": "table"
+  },
+  "<!--[if IE]>": {
+    "body": [
+      "<!--[if IE]>",
+      "\t$1",
+      "<![endif]-->"
+    ],
+    "triggerAssist": false,
+    "prefix": "ifie"
+  },
+  "input_search": {
+    "body": [
+      "<input type=\"search\" name=\"$1\" required=\"$2\" placeholder=\"Search\" x-webkit-speech=\"$3\" x-webkit-grammar=\"builtin:search\" lang=\"zh-CN\">"
+    ],
+    "triggerAssist": false,
+    "prefix": "insearch"
+  },
+  "img_src": {
+    "body": [
+      "<img src=\"$1\" >"
+    ],
+    "triggerAssist": true,
+    "prefix": "img"
+  },
+  "input": {
+    "body": [
+      "<input type=\"$1\" name=\"$2\" id=\"$2\" value=\"$3\" />"
+    ],
+    "triggerAssist": true,
+    "prefix": "input"
+  },
+  "iframe": {
+    "body": [
+      "<iframe src=\"$1\" width=\"$2\" height=\"$3\"></iframe>"
+    ],
+    "triggerAssist": true,
+    "prefix": "iframe"
+  },
+  "html_5": {
+    "body": [
+      "<!DOCTYPE HTML>"
+    ],
+    "triggerAssist": false,
+    "prefix": "dochtml5"
+  },
+  "form_submit": {
+    "body": [
+      "<form action=\"$1\" method=\"${2:post}\">",
+      "\t$0",
+      "\t<input type=\"submit\" value=\"$3\"/>",
+      "</form>"
+    ],
+    "triggerAssist": true,
+    "prefix": "form"
+  },
+  "select_option": {
+    "body": [
+      "<select name=\"$1\">",
+      "\t<option value=\"$2\">$3</option>",
+      "</select>"
+    ],
+    "triggerAssist": false,
+    "prefix": "select"
+  },
+  "ng-": {
+    "body": [
+      "ng-${1:app}=\"$2\""
+    ],
+    "triggerAssist": false,
+    "scope": "HTML_ATTRIBUTE",
+    "prefix": "ng-"
+  },
+  "link": {
+    "body": [
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"$1\"/>"
+    ],
+    "triggerAssist": true,
+    "prefix": "link"
+  },
+  "div": {
+    "body": [
+      "<div id=\"$1\">",
+      "\t$0",
+      "</div>"
+    ],
+    "triggerAssist": true,
+    "prefix": "div"
+  },
+  "input_text": {
+    "body": [
+      "<input type=\"text\" id=\"$1\" value=\"$2\" />"
+    ],
+    "triggerAssist": true,
+    "prefix": "intext"
+  },
+  "meta": {
+    "body": [
+      "<meta name=\"$1\" content=\"$2\"/>"
+    ],
+    "triggerAssist": true,
+    "prefix": "meta"
+  },
+  "dl_dt_dd": {
+    "body": [
+      "<dl>",
+      "\t<dt>$1</dt>",
+      "\t<dd>$2</dd>",
+      "</dl>"
+    ],
+    "triggerAssist": false,
+    "prefix": "dl"
+  },
+  "style": {
+    "body": [
+      "<style type=\"text/css\">",
+      "\t$0",
+      "</style>"
+    ],
+    "triggerAssist": false,
+    "prefix": "style"
+  },
+  "fieldset": {
+    "body": [
+      "<fieldset id=\"$2\">",
+      "\t<legend>$1</legend>",
+      "\t",
+      "\t$0",
+      "</fieldset>"
+    ],
+    "triggerAssist": false,
+    "prefix": "fieldset"
+  },
+  "meta_viewport": {
+    "body": [
+      "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "metaviewport"
+  },
+  "meta_UTF8": {
+    "body": [
+      "<meta charset=\"UTF-8\"/>"
+    ],
+    "triggerAssist": false,
+    "prefix": "metautf"
+  },
+  "meta_GB2312": {
+    "body": [
+      "<meta charset=\"GB2312\"/>"
+    ],
+    "triggerAssist": false,
+    "prefix": "metagb"
+  },
+  "input_reset": {
+    "body": [
+      "<input type=\"reset\" value=\"$1\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "inreset"
+  },
+  "input_password": {
+    "body": [
+      "<input type=\"password\" name=\"$1\" />"
+    ],
+    "triggerAssist": false,
+    "prefix": "inpassword"
+  },
+  "input_image": {
+    "body": [
+      "<input type=\"image\" src=\"$1\" />"
+    ],
+    "triggerAssist": true,
+    "prefix": "inimage"
+  },
+  "<!--[if lte IE 6]>": {
+    "body": [
+      "<!--[if lte IE 6]>",
+      "\t$1",
+      "<![endif]-->"
+    ],
+    "triggerAssist": false,
+    "prefix": "ifie6"
+  },
+  "Non-Breaking Space": {
+    "body": [
+      "\u0026nbsp;"
+    ],
+    "triggerAssist": false,
+    "prefix": "space"
+  },
+  "meta_description": {
+    "body": [
+      "<meta name=\"Description\" content=\"$1\"/>"
+    ],
+    "triggerAssist": false,
+    "prefix": "metadescription"
+  },
+  "span_id": {
+    "body": [
+      "<span id=\"$1\">",
+      "\t$0",
+      "</span>"
+    ],
+    "triggerAssist": true,
+    "prefix": "span"
+  },
+  "input_lable": {
+    "body": [
+      "<input type=\"${1:radio}\" name=\"$2\" id=\"$2\" value=\"$3\"/><label for=\"$2\">$4</label>"
+    ],
+    "triggerAssist": false,
+    "prefix": "inputlable"
+  }
+}
