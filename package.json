@@ -1,8 +1,8 @@
 {
     "name": "uni-app",
     "displayName": "Uni App Snippets",
-    "description": "Support commonly used code snippets in Hbuilder/HbuilderX.",
-    "version": "0.0.2",
+    "description": "Support commonly used code snippets in Hbuilder and HbuilderX.",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.52.0"
     },
