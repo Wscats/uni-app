@@ -4,7 +4,8 @@
   "description": "Support commonly used code snippets in Hbuilder and HbuilderX.",
   "version": "0.0.3",
   "engines": {
-    "vscode": "^1.52.0"
+    "vscode": "^1.52.0",
+    "node": ">=18.0.0"
   },
   "icon": "images/uni-app.jpg",
   "author": {
@@ -27,7 +28,10 @@
     "package": "vsce package",
     "lint": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
     "test": "jest --coverage",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "lint:check": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "contributes": {
     "snippets": [
@@ -136,5 +140,14 @@
         "path": "./snippets/javascript.json"
       }
     ]
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wscats/uni-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wscats/uni-app/issues"
+  },
+  "homepage": "https://github.com/wscats/uni-app#readme"
 }
